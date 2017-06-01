@@ -1,5 +1,6 @@
 const state = {
-  touxiang: 'http://ofyaji162.bkt.clouddn.com/touxiang.jpg',
+  // touxiang: 'http://ofyaji162.bkt.clouddn.com/touxiang.jpg',
+  touxiang: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496293404328&di=44cd149880a342c8d58894d74f50a58d&imgtype=0&src=http%3A%2F%2Ff.hiphotos.baidu.com%2Fzhidao%2Fwh%253D450%252C600%2Fsign%3D0e1997119513b07ebde8580c39e7bd15%2Fa8014c086e061d95ff9027087df40ad162d9ca28.jpg',
   key: '9019a61af1584616b14262b9d5f5c1ff',
   menus: [
     // {

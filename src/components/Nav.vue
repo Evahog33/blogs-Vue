@@ -3,9 +3,9 @@
     <nav id="slider-bar" ref="slider">
       <div class="slider-content">
         <div class="profile">
-          <a href="https://github.com/xyxiao001" target="_blank" class="my-img">
-             <img :src="touxiang" alt="goodboy blog">
-           </a>
+          <a href="https://github.com/Evahog33" target="_blank" class="my-img">
+            <img :src="touxiang" alt="goodboy blog">
+          </a>
           <span>goodboy</span>
         </div>
         <ul class="menus">
@@ -28,43 +28,43 @@
 </template>
 
 <script>
-import store from '../vuex/store'
-export default {
-  data () {
-    return {
-      now: 0,
-      drop: false
-    }
-  },
-  computed: {
-    touxiang () {
-      return store.getters.getTouxiang
-    },
-    menus () {
-      return store.getters.getMenus
-    }
-  },
-  methods: {
-    open () {
-      if (this.drop) {
-        this.$refs.slider.style.transform = 'translate3d(-250px, 0, 0)'
-        this.drop = false
-      } else {
-        this.$refs.slider.style.transform = 'translate3d(0, 0, 0)'
-        this.drop = true
+  import store from '../vuex/store'
+  export default {
+    data () {
+      return {
+        now: 0,
+        drop: false
       }
-    }
-  },
-  mounted () {
-    this.$nextTick(() => {
-      document.querySelectorAll('.menu').forEach((v, i) => {
-        if (v.childNodes[0].className === 'active') {
-          this.now = i
+    },
+    computed: {
+      touxiang () {
+        return store.getters.getTouxiang
+      },
+      menus () {
+        return store.getters.getMenus
+      }
+    },
+    methods: {
+      open () {
+        if (this.drop) {
+          this.$refs.slider.style.transform = 'translate3d(-250px, 0, 0)'
+          this.drop = false
+        } else {
+          this.$refs.slider.style.transform = 'translate3d(0, 0, 0)'
+          this.drop = true
         }
+      }
+    },
+    mounted () {
+      this.$nextTick(() => {
+        document.querySelectorAll('.menu').forEach((v, i) => {
+          if (v.childNodes[0].className === 'active') {
+            this.now = i
+          }
+        })
       })
-    })
+    }
   }
-}
 </script>
 
 <style lang="scss">
@@ -84,7 +84,7 @@ export default {
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     z-index: 1000;
     &::-webkit-scrollbar {
       width: 0px;
@@ -94,7 +94,7 @@ export default {
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: rgba(235,87,86,.73);
+      background-color: rgba(235, 87, 86, .73);
       border-radius: 4px;
     }
 
@@ -124,7 +124,7 @@ export default {
 
         &:hover {
           -webkit-transform: rotate3d(0, 0, 1, 360deg);
-                  transform: rotate3d(0, 0, 1, 360deg);
+          transform: rotate3d(0, 0, 1, 360deg);
         }
       }
 
@@ -155,8 +155,8 @@ export default {
           height: 100%;;
           display: block;
           color: #999;
-          -webkit-transition: color .2s cubic-bezier(.4,.01,.165,.99);
-          transition: color .2s cubic-bezier(.4,.01,.165,.99);
+          -webkit-transition: color .2s cubic-bezier(.4, .01, .165, .99);
+          transition: color .2s cubic-bezier(.4, .01, .165, .99);
           text-decoration: none;
 
           i {
@@ -184,15 +184,16 @@ export default {
       }
     }
   }
+
   .navTop {
     display: none;
   }
 
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 1000px) {
     #slider-bar {
       top: 50px;
       -webkit-transform: translate3d(-250px, 0, 0);
-              transform: translate3d(-250px, 0, 0);
+      transform: translate3d(-250px, 0, 0);
     }
 
     .navTop {
@@ -225,7 +226,7 @@ export default {
     }
   }
 
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 500px) {
     #slider-bar {
       opacity: 0.9;
 
