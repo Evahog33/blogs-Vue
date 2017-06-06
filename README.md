@@ -4,7 +4,7 @@
 
 ##      技术 vue2.0 vuex sass es6 vue-router2.0
 ###  安装
-####         git clone https://github.com/xyxiao001/vue-blog.git
+####         git clone https://https://github.com/Evahog33/blogs-Vue.git
 ####         cd vue--blog
 ####         npm install -d
 ###  启动
