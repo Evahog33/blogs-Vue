@@ -11,5 +11,5 @@
 ####         npm run dev
 ###  编译
 ####         npm run build
-![Alt text](http://a1.qpic.cn/psb?/V12SQR6G1TGQE4/AO0zvL8NP0V*Fguck9EhwfuVhOE24PoDBohYKc5jL80!/b/dHUAAAAAAAAA&bo=QwWAAgAAAAABAOM!&rf=viewer_4)
+![Alt text](http://a4.qpic.cn/psb?/V12SQR6G1TGQE4/GBLdXPNQUeX*8eO*r5X1m*FaWOH*3aRumb7WkLlhQOg!/b/dLMAAAAAAAAA&ek=1&kp=1&pt=0&bo=NAWAAgAAAAADV8E!&tm=1496736000&sce=60-2-2&rf=viewer_4)
 
